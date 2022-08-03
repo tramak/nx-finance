@@ -2,7 +2,14 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
-    "nx-finance": "apps/nx-finance",
-    "nx-finance-e2e": "apps/nx-finance-e2e"
+    "api": "libs/api",
+    "finance": "apps/finance",
+    "finance-e2e": "apps/finance-e2e",
+    "redux": "libs/redux",
+    "translate": "libs/translate",
+    "types": "libs/types",
+    "ui": "libs/ui",
+    "ui-e2e": "apps/ui-e2e",
+    "utils": "libs/utils"
   }
 }
