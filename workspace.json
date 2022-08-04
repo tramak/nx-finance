@@ -5,6 +5,8 @@
     "api": "libs/api",
     "finance": "apps/finance",
     "finance-e2e": "apps/finance-e2e",
+    "mobile": "apps/mobile",
+    "mobile-e2e": "apps/mobile-e2e",
     "redux": "libs/redux",
     "translate": "libs/translate",
     "types": "libs/types",
