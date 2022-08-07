@@ -20,6 +20,7 @@
       "@finance/translate": ["libs/translate/src/index.ts"],
       "@finance/types": ["libs/types/src/index.ts"],
       "@finance/ui": ["libs/ui/src/index.ts"],
+      "@finance/ui-mobile": ["libs/ui-mobile/src/index.ts"],
       "@finance/utils": ["libs/utils/src/index.ts"]
     },
     "typeRoots": ["types", "node_modules/@types"],

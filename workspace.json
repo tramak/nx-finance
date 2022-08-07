@@ -12,6 +12,7 @@
     "types": "libs/types",
     "ui": "libs/ui",
     "ui-e2e": "apps/ui-e2e",
+    "ui-mobile": "libs/ui-mobile",
     "utils": "libs/utils"
   }
 }
