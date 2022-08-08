@@ -6,8 +6,11 @@ const Stack = createNativeStackNavigator();
 
 export const MainNav = () => {
   return (
-    <Stack.Navigator>
-      <Stack.Screen name="Home" component={Home} />
+    <Stack.Navigator
+      initialRouteName="Categories"
+      screenOptions={{ unmountOnBlur: true }}
+    >
+      <Stack.Screen name='Categories' component={Home} />
     </Stack.Navigator>
   );
 };
