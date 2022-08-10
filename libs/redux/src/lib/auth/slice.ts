@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { IAuth } from './interfaces';
+import { IAuth } from '@finance/types';
 
 const initialState: IAuth.State = {};
 

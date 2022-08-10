@@ -28,7 +28,8 @@
       "configurations": {
         "development": {
           "buildTarget": "finance:build:development",
-          "dev": true
+          "dev": true,
+          "port": 3000
         },
         "production": {
           "buildTarget": "finance:build:production",

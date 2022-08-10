@@ -5,7 +5,7 @@ export const Home = () => {
   return (
     <View>
       <Text>
-        HOME PAGE
+        HOME PAGE!!
       </Text>
     </View>
   )

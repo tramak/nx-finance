@@ -1,5 +1,6 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { CenterSpinner, LogIn } from '@finance/ui-mobile';
 import { Home } from '../../Home/Home';
 
 const Stack = createNativeStackNavigator();
@@ -7,10 +8,10 @@ const Stack = createNativeStackNavigator();
 export const MainNav = () => {
   return (
     <Stack.Navigator
-      initialRouteName="Categories"
-      screenOptions={{ unmountOnBlur: true }}
+      initialRouteName="login"
     >
-      <Stack.Screen name='Categories' component={Home} />
+      <Stack.Screen name='home' component={Home} />
+      <Stack.Screen name='login' component={LogIn} />
     </Stack.Navigator>
   );
 };

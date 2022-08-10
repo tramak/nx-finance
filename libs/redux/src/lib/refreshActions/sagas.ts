@@ -6,7 +6,7 @@ import registerRequest from '../utils/registerRequest';
 import * as I from './interfaces';
 import { allActions } from '../allActions';
 import { refreshToken } from '../auth/actions';
-import { IAuth } from '../auth/interfaces';
+import { IAuth } from '@finance/types';
 
 const fetchAuthRefresh = function* (data: IAuth.Tokens) {
   yield put(authActions.setTokens(data));

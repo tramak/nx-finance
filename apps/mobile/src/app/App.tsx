@@ -19,11 +19,6 @@ export const App = () => {
       <Provider store={store}>
         <PersistGate loading={<CenterSpinner />} persistor={persistor}>
           <NavigationContainer>
-            <View>
-              <Text>Test!!!!----</Text>
-            </View>
-
-            <LogIn />
             <MainNav />
           </NavigationContainer>
         </PersistGate>
