@@ -3,6 +3,7 @@
   "version": 2,
   "projects": {
     "api": "libs/api",
+    "config": "libs/config",
     "finance": "apps/finance",
     "finance-e2e": "apps/finance-e2e",
     "mobile": "apps/mobile",

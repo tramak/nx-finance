@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@finance/api": ["libs/api/src/index.ts"],
+      "@finance/config": ["libs/config/src/index.ts"],
       "@finance/redux": ["libs/redux/src/index.ts"],
       "@finance/translate": ["libs/translate/src/index.ts"],
       "@finance/types": ["libs/types/src/index.ts"],
