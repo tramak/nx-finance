@@ -1,3 +1,6 @@
 {
-  "babelrcRoots": ["*"]
+  "babelrcRoots": ["*"],
+  "plugins": [
+    "optional-require"
+  ]
 }

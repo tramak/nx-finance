@@ -9,7 +9,7 @@ import { store, persistor } from '@finance/redux';
 import { CenterSpinner, LogIn } from '@finance/ui-mobile';
 import { PersistGate } from 'redux-persist/integration/react';
 import { NavigationContainer } from '@react-navigation/native';
-import { MainNav } from './components/nav/MainNav/MainNav';
+import { MainNav } from './nav/MainNav/MainNav';
 
 export const App = () => {
   const scrollViewRef = useRef<null | ScrollView>(null);

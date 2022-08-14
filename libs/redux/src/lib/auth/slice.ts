@@ -9,13 +9,18 @@ const slice = createSlice({
     reducers: {
         setTokens(state, action: IAuth.SetTokensAction) {
             state.tokens = action.payload;
-            localStorage.setItem('refreshToken', action.payload.refreshToken);
-            localStorage.setItem('accessToken', action.payload.accessToken);
+
+            if (typeof localStorage !== 'undefined') {
+              localStorage.setItem('refreshToken', action.payload.refreshToken);
+              localStorage.setItem('accessToken', action.payload.accessToken);
+            }
         },
         removeTokens(state) {
             state.tokens = undefined;
-            localStorage.removeItem('refreshToken');
-            localStorage.removeItem('accessToken');
+            if (typeof localStorage !== 'undefined') {
+              localStorage?.removeItem('refreshToken');
+              localStorage?.removeItem('accessToken');
+            }
         },
     },
 });

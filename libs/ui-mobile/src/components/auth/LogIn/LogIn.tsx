@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import { Text, View } from 'react-native';
 import {
   GoogleSignin,
@@ -6,11 +6,16 @@ import {
   statusCodes,
 } from '@react-native-google-signin/google-signin';
 import { config } from '@finance/config';
+import { IAuth } from '@finance/types';
 import styles from './Login.styles';
 //
 // GoogleSignin.configure();
 
-export const LogIn = () => {
+export interface ILogInProps {
+  setTokens: (payload: IAuth.Tokens) => void;
+}
+
+export const LogIn = ({ setTokens }: ILogInProps) => {
   const isSigninInProgress = false;
 
   useEffect(() => {
@@ -30,6 +35,11 @@ export const LogIn = () => {
     try {
       await GoogleSignin.hasPlayServices();
       const userInfo = await GoogleSignin.signIn();
+
+      setTokens({
+        accessToken: userInfo.idToken,
+        refreshToken: userInfo.idToken,
+      })
       console.log({ userInfo });
     } catch (error) {
       console.log({ error });
