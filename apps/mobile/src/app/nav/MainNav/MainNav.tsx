@@ -1,8 +1,9 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Blog from '../../icons/blog.svg';
 import { useAppSelector } from '@finance/redux';
+import Home from '@ant-design/icons-svg/inline-svg/outlined/home.svg';
+import Blog from '../../icons/blog.svg';
 import { HomeScreen } from '../../screen/HomeScreen/HomeScreen';
 import { LogInScreen } from '../../screen/LogInScreen/LogInScreen';
 
@@ -29,6 +30,7 @@ export const MainNav = () => {
             iconName = focused
               ? 'ios-information-circle'
               : 'ios-information-circle-outline';
+            return <Home width={24} height={24} stroke="#000000" fill="#000000" />
           } else if (route.name === 'Settings') {
             iconName = focused ? 'ios-list-box' : 'ios-list';
           }

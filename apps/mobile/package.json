@@ -3,8 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "@ant-design/icons-svg": "^4.2.1",
     "@react-native-async-storage/async-storage": "*",
     "@react-native-google-signin/google-signin": "^8.0.0",
+    "@react-navigation/bottom-tabs": "*",
     "@react-navigation/native": "*",
     "@react-navigation/native-stack": "*",
     "@reduxjs/toolkit": "*",
@@ -20,7 +22,6 @@
     "react-native-svg": "*",
     "react-redux": "*",
     "redux-persist": "*",
-    "redux-saga": "*",
-    "@react-navigation/bottom-tabs": "*"
+    "redux-saga": "*"
   }
 }

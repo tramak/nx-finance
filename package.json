@@ -9,6 +9,7 @@
   },
   "private": true,
   "dependencies": {
+    "@ant-design/icons-svg": "^4.2.1",
     "@nrwl/next": "14.5.1",
     "@react-native-google-signin/google-signin": "^8.0.0",
     "@react-navigation/bottom-tabs": "^6.3.2",
