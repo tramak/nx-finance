@@ -56,7 +56,7 @@ export const LogIn = ({ setTokens }: ILogInProps) => {
   };
 
   return (
-    <View style={styles.container}>
+    <View style={styles.center}>
       <GoogleSigninButton
         style={{ width: 192, height: 48 }}
         size={GoogleSigninButton.Size.Wide}

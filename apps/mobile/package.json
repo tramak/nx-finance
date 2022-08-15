@@ -22,6 +22,8 @@
     "react-native-svg": "*",
     "react-redux": "*",
     "redux-persist": "*",
-    "redux-saga": "*"
+    "redux-saga": "*",
+    "react-final-form": "*",
+    "@react-native-material/core": "*"
   }
 }
